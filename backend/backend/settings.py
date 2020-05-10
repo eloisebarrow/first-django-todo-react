@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.Corsmiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -123,6 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000/'
-)
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    'http://127.0.0.1:8000'
+]
