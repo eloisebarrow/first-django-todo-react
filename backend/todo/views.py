@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_frameworks import viewsets # viewsets base class provides the implementation for CRUD operations
+from rest_framework import viewsets # viewsets base class provides the implementation for CRUD operations
 from .serializers import TodoSerializer
 from .models import Todo 
 
