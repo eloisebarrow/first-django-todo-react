@@ -18,6 +18,8 @@ from django.urls import path, include
 from rest_framework import routers
 from todo import views
 
+# GET and POST at /api/todos
+# DELETE and UPDATE at api/todos/id
 router = routers.DefaultRouter()
 router.register(r'todos', views.TodoView, 'todo')
 
